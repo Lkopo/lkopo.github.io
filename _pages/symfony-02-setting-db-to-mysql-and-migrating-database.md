@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Understanding project structure
+title: Setting DB to MySQL and migrating database
 permalink: /tutorial/symfony/02-setting-db-to-mysql-and-migrating-database
 ---
 
