@@ -34,30 +34,34 @@ content:
 {% endraw %}
 ```
 
-What was done here? This is a Twig syntax of extending template and filling content of the blocks. We use either `{% ... %}`
-or `{{ ... }}` brackets. The first variation is used for anything unrelated with output of something. They can define _blocks_
+What was done here? This is a Twig syntax of extending template and filling content of the blocks. We use either {% raw %}{% ... %}{% endraw %}
+or {% raw %}{{ ... }}{% endraw %} brackets. The first variation is used for anything unrelated with output of something. They can define _blocks_
 which can be extended or overwritten by another templates, use loops or declare variables. Second variation wraps variable or
 function call which provides some output the user will see.
 
 So to explain our template, we first tell that we want to extend some base template `base.html.twig`. This template is located
 in `templates/` folder. It contains the base layout of our whole application. Each template then extends this one and adds
-additional content or rewrites the default one. If we extend something, we put `{% extends 'templatename.html.twig' %}`
+additional content or rewrites the default one. If we extend something, we put {% raw %}{% extends 'templatename.html.twig' %}{% endraw %}
 at the beggining of the file. Then we overwrite blocks `title` and `main` with our new content where `main` has our wanted
-value `{{ number }}`. Blocks have simple syntax:
+value {% raw %}{{ number }}{% endraw %}. Blocks have simple syntax:
 
 ```twig
+{% raw %}
 {% block blockName %}content{% endblock %}
+{% endraw %}
 ```
 
 if we extend some template which has this block define and we want to overwrite the `content` to `my new content`, we will just
 redefine this block in our new template:
 
 ```twig
+{% raw %}
 {% block blockName %}my new content{% endblock %}
+{% endraw %}
 ```
 
 But wait, there is another one - block `sidebar`! Yes it is, but in this case, block is more extended than overwritten even though
-it's technically overwriting. How so? Because of `{{ parent() }}`. This function call outputs the content of it's base template so if there
+it's technically overwriting. How so? Because of {% raw %}{{ parent() }}{% endraw %}. This function call outputs the content of it's base template so if there
 is something in the base template defined for that block, everything will be copied here plus our additional content.
 The `show_source_code(_self)` function is a Twig function extension which is out of scope of this tutorial. In short, it was designed for
 Symfony demo which will display _Show source code_ button which shows the source code of actual template and controller. It's definition
@@ -96,6 +100,7 @@ the content of `generate()` controller method and `generate.html.twig` template 
 Our navigation is part of the already mentioned base template. Let's update this `base.html.twig` template to insert our new item:
 
 ```twig
+{% raw %}
 {% block header_navigation_links %}
     <li>
         <a href="{{ path('blog_index') }}">
@@ -112,6 +117,7 @@ Our navigation is part of the already mentioned base template. Let's update this
 
     <!-- The rest of the content.... -->
 {% endblock %}
+{% endraw %}
 ```
 
 Function `path()` will generate an URL link to the route based on its name and will pass
