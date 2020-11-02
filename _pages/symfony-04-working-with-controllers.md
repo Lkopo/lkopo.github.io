@@ -154,5 +154,5 @@ didn't set maximum:
 Now we are able to access [http://localhost/en/random/generate](http://localhost/en/random/generate)
 as well as the URL with maximum number specified.
 
-Great! Well done, again. The following [exercise 05](/tutorial/symfony/working-with-templates) will be focused
+Great! Well done, again. The following [exercise 05](/tutorial/symfony/05-working-with-templates) will be focused
 on displaying our random numbers in application styled layout using Twig templates instead of blank white page. Yay!
