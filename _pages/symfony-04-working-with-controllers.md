@@ -64,7 +64,7 @@ class RandomController extends AbstractController
 }
 ```
 
-Try it: [http://192.168.56.200/en/random/generate](http://192.168.56.200/en/random/generate).
+Try it: [http://localhost/en/random/generate](http://localhost/en/random/generate).
 
 This is a pure example where this method will work without need of `AbstractController` helper.
 Each route has its `name` property as later in application, when you would like to make a reference
@@ -129,11 +129,11 @@ class RandomController extends AbstractController
 }
 ```
 
-That's it. Try it by yourself: [http://192.168.56.200/en/random/generate/12](http://192.168.56.200/en/random/generate/12).
+That's it. Try it by yourself: [http://localhost/en/random/generate/12](http://localhost/en/random/generate/12).
 Accesing this URL should show the random number between 0-12.
 
 Now let's try to pass something non-numeric value:
-[http://192.168.56.200/en/random/generate/abv](http://192.168.56.200/en/random/generate/abc).
+[http://localhost/en/random/generate/abv](http://localhost/en/random/generate/abc).
 
 Calling this URL will raise an PHP error (500) as we are trying to pass non-numeric value to `int $max`. Not handling
 parameters validation can lead to vulnerability of the system itself. We can put requirements, if needed as next
@@ -151,7 +151,7 @@ didn't set maximum:
 @Route("/generate/{max}", name="random_generate", requirements={"max": "\d+"}, defaults={"max": 100})
 ```
 
-Now we are able to access [http://192.168.56.200/en/random/generate](http://192.168.56.200/en/random/generate)
+Now we are able to access [http://localhost/en/random/generate](http://localhost/en/random/generate)
 as well as the URL with maximum number specified.
 
 Great! Well done, again. The following [exercise 05](/tutorial/symfony/working-with-templates) will be focused
