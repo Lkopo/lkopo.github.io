@@ -10,6 +10,8 @@ permalink: /tutorial/symfony
 3. [Discovering Symfony console commands](/tutorial/symfony/03-discovering-symfony-console-commands)
 4. [Working with controllers](/tutorial/symfony/04-working-with-controllers)
 5. [Working with templates](/tutorial/symfony/05-working-with-templates)
+6. [Working with database](/tutorial/symfony/06-working-with-database)
+7. [Working with forms](/tutorial/symfony/07-working-with-forms)
 
 Symfony is one of the most famous PHP frameworks with huge community and it's growing fast - really fast. Some may know that Symfony framework has so many files for sometimes so little project, like [Symfony demo](https://github.com/symfony/demo). But is it hard to learn it? Back in the days PHP frameworks were not as popular as of today and so was the challenge to learn it. Documentation was poor, beginners were stucked at the beginning and lack of community was a reason to stick with "traditional" development of pages in PHP - fast development with low modularity and high cost in case of change during development process.
 
