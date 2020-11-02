@@ -8,7 +8,7 @@ permalink: /tutorial/symfony/01-understanding-project-structure
 /var/www/html/
 ├─ assets/        - assets to be compiled (SASS, ...)
 ├─ bin/
-│  └─ console     - PHP console binary scripts for database tools, file generating, will be shown in exercise 03
+│  └─ console     - PHP console binary script which aggregates other scripts for database tools, file generating, will be shown in exercise 03
 ├─ config/        - Symfony configuration files, security, routing, database, ...
 ├─ migrations/    - scripts for migrating database structure
 ├─ public/        - content of this folder should be visible to public
