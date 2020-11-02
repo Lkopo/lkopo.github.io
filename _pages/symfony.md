@@ -56,4 +56,4 @@ Now let's go to the project folder at `/var/www/html/` and create a Symfony demo
 symfony new --demo .
 ```
 
-This will clone and install demo application for our tutorial exercises. Get ready! Once done, follow the first exercise 01 to understand project file structure.
+This will clone and install demo application for our tutorial exercises. Get ready! Once done, follow the first [exercise 01](/tutorial/symfony/01-understanding-project-structure) to understand project file structure.
