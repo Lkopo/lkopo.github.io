@@ -49,7 +49,7 @@ As we can see, this tool created two files for us with already some basic conten
 
 Let's test it - open http://localhost/en/random in the URL if it works. If you can
 see a _Hello RandomController_ page, it's working! Let's continue
-to [exercise 04](/symfony/tutorial/04-working-with-controllers) to see how to
+to [exercise 04](/tutorial/symfony/04-working-with-controllers) to see how to
 work with controllers.
 
 PS: Don't worry. We will see more command usages in next exercises.
