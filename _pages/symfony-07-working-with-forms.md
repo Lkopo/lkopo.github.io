@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Working with forms
-permalink: /tutorial/symfony/06-working-with-forms
+permalink: /tutorial/symfony/07-working-with-forms
 ---
 
 [_Symfony Forms docs_](https://symfony.com/doc/current/forms.html)
