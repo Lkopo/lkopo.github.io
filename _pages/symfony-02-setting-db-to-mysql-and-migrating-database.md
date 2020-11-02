@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Understanding project structure
-permalink: /tutorial/symfony/01-setting-db-to-mysql-and-migrating-database
+permalink: /tutorial/symfony/02-setting-db-to-mysql-and-migrating-database
 ---
 
 Current implementation uses own SQLite database which is located in
